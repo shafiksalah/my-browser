@@ -3,16 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mini Browser</title>
+  <title>DogeUB Browser</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="browser-container">
-    <input id="urlInput" type="text" placeholder="Enter URL here" />
+  <header>
+    <h1>DogeUB Browser 🐶</h1>
+  </header>
+
+  <div class="controls">
+    <input id="urlInput" type="text" placeholder="Enter URL..." />
     <button id="goBtn">Go</button>
-    <iframe id="browserFrame" src="" sandbox="allow-scripts allow-same-origin"></iframe>
+    <button id="bookmarkBtn">★ Bookmark</button>
+    <button id="newTabBtn">+ Tab</button>
   </div>
-  
+
+  <div class="tabs" id="tabsContainer"></div>
+
+  <div class="sidebar">
+    <h3>History</h3>
+    <ul id="historyList"></ul>
+    <h3>Bookmarks</h3>
+    <ul id="bookmarkList"></ul>
+  </div>
+
+  <footer>
+    <p>🐶 DogeUB Browser on GitHub Pages</p>
+  </footer>
+
   <script src="app.js"></script>
 </body>
 </html>
